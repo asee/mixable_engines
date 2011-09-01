@@ -1,4 +1,4 @@
-Original code Copyright (c) 2011 Andrius
+Original code Copyright (c) 2011 StackOverflow users 'Andrius' and 'Andrei'
 Enhancements and documentation Copyright (c) 2011 ASEE
 
 Permission is hereby granted, free of charge, to any person obtaining
