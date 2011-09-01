@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "mixable_engines"
   gem.homepage = "http://github.com/tmorton/mixable_engines"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{For rails 3, makes engines "mixable" - classes in the app directory will be mixed in with the main application.}
+  gem.description = %Q{For rails 3, makes engines "mixable" - classes in the app directory will be mixed in with the main application.}
   gem.email = "tim@timothymorton.com"
   gem.authors = ["Tim Morton"]
   # dependencies defined in Gemfile

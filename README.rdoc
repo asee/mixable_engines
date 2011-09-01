@@ -1,6 +1,6 @@
 = mixable_engines
 
-Description goes here.
+Makes engines mixable.
 
 == Contributing to mixable_engines
  
