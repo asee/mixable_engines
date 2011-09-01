@@ -1,4 +1,5 @@
-Copyright (c) 2011 Tim Morton (and others)
+Original code Copyright (c) 2011 Andrius
+Enhancements and documentation Copyright (c) 2011 ASEE
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
