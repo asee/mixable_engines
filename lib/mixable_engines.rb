@@ -15,7 +15,7 @@ module ActiveSupport::Dependencies
   
 private
   def plugin_and_engine_paths
-    engines = Rails::Application.railties.plugins + Rails::Application.railties.engines
+    engines = Rails.application.class.railties.plugins + Rails.application.class.railties.engines
     engines.collect{|engine| engine.config.root.to_s }
   end
 end
