@@ -17,8 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "mixable_engines"
   gem.homepage = "http://github.com/tmorton/mixable_engines"
   gem.license = "MIT"
-  gem.summary = %Q{For rails 3, makes engines "mixable" - classes in the app directory will be mixed in with the main application.}
-  gem.description = %Q{For rails 3, makes engines "mixable" - classes in the app directory will be mixed in with the main application.}
+  gem.summary = %Q{Makes engines "mixable" - classes in the app directory will be mixed in with the main application.}
+  gem.description = %Q{In the old Engines plugin (used before the built-in engines arrived in rails 2.3), controller and helper classes were mixed together.  That is, if an engine had a FooController, and your application also had a FooController, you could use the actions in both controllers.  In the built-in Engines functionality in Rails 3, this does not occur.  Your application's FooController replaces the engine controller entirely.
+
+  This gem restores the old functionality, allowing you to easily override parts of an engine in your application. }
   gem.email = "tim@timothymorton.com"
   gem.authors = ["Tim Morton"]
   # dependencies defined in Gemfile
