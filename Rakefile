@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "mixable_engines"
-  gem.homepage = "http://github.com/tmorton/mixable_engines"
+  gem.homepage = "http://github.com/asee/mixable_engines"
   gem.license = "MIT"
   gem.summary = %Q{Makes engines "mixable" - classes in the app directory will be mixed in with the main application.}
   gem.description = %Q{In the old Engines plugin (used before the built-in engines arrived in rails 2.3), controller and helper classes were mixed together.  That is, if an engine had a FooController, and your application also had a FooController, you could use the actions in both controllers.  In the built-in Engines functionality in Rails 3, this does not occur.  Your application's FooController replaces the engine controller entirely.
