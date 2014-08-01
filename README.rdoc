@@ -5,7 +5,10 @@ In the old Engines plugin (used before the built-in engines arrived in rails 2.3
 == Usage
 
 In your engine's engine.rb file, include the following line:
+
+```ruby
 config.mixable_engines.paths << File.expand_path("#{config.root}")
+```
 
 That's it!
 
