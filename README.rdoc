@@ -1,13 +1,13 @@
 = mixable_engines
 
-In the old Engines plugin (used before the built-in engines arrived in rails 2.3), controller and helper classes were mixed together.  That is, if an engine had a FooController, and your application also had a FooController, you could use the actions in both controllers.  In the built-in Engines functionality in Rails 3, this does not occur.  Your application's FooController replaces the engine controller entirely.
+In the old Engines plugin (used before the built-in engines arrived in rails 2.3), controller and helper classes were mixed together.  That is, if an engine had a FooController, and your application also had a FooController, you could use the actions in both controllers.  In the built-in Engines functionality in Rails 3+, this does not occur.  Your application's FooController replaces the engine controller entirely. This gem reverts to the old behavior.
 
-This gem restores the old functionality, allowing you to easily override parts of an engine in your application. 
+== Usage
 
-The code is based on some snippets posted on Stack Overflow.  See these links for some discussion of the problem:
-http://stackoverflow.com/questions/5045068/extending-controllers-of-a-rails-3-engine-in-the-main-app
-http://stackoverflow.com/questions/2964050/rails-engines-extending-functionality
+In your engine's engine.rb file, include the following line:
+config.mixable_engines.paths << File.expand_path("#{config.root}")
 
+That's it!
 
 == Contributing to mixable_engines
  
@@ -21,5 +21,5 @@ http://stackoverflow.com/questions/2964050/rails-engines-extending-functionality
 
 == Copyright
 
-Copyright (c) 2011 ASEE and Andrius. See LICENSE.txt for further details.
+Copyright (c) 2011-2014 ASEE and Andrius. See LICENSE.txt for further details.
 
